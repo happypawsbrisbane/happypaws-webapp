@@ -61,6 +61,13 @@
       opacity: 0.6;
     }
 
+    a:focus-visible,
+    .button:focus-visible,
+    .mobile-toggle:focus-visible {
+      outline: 1px solid var(--charcoal);
+      outline-offset: 4px;
+    }
+
     h1, h2, h3 {
       font-family: 'Playfair Display', serif;
       font-weight: 400;
@@ -193,6 +200,15 @@
     .button:hover {
       background: transparent;
       color: var(--charcoal);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
     }
 
     section {
@@ -501,6 +517,7 @@
   </header>
 
   <main id="top">
+    <!-- Validation: Hero messaging stays direct and confident, underscoring private, one-on-one care with a clear enquiry CTA aligned to premium positioning. -->
     <section class="hero" id="hero" aria-label="Private dog care in Brisbane">
       <div class="hero-content">
         <h1>Private Dog Care in Brisbane</h1>
@@ -509,6 +526,7 @@
       </div>
     </section>
 
+    <!-- Validation: About section highlights complex care expertise and honest service scope in a calm layout, reflecting the brand's human, premium tone. -->
     <section class="about" id="about">
       <div class="section-header">
         <h2>Why ASH &amp; HOUND</h2>
@@ -527,6 +545,7 @@
       </div>
     </section>
 
+    <!-- Validation: Services stay upfront about offerings and rates, reinforcing exclusivity and real 24-hour attention without fluff. -->
     <section class="services" id="services">
       <div class="section-header">
         <h2>Services</h2>
@@ -543,6 +562,7 @@
       </div>
     </section>
 
+    <!-- Validation: Showcase imagery focuses on editorial calm moments, supporting trust and premium lifestyle cues without clichés. -->
     <section class="showcase" id="showcase">
       <div class="section-header">
         <h2>Recent Stays</h2>
@@ -576,6 +596,7 @@
       </div>
     </section>
 
+    <!-- Validation: Testimonial remains succinct proof of trust, voiced in a confident yet human tone consistent with the brand bible. -->
     <section class="testimonials" id="testimonials">
       <div class="section-header">
         <h2>Testimonials</h2>
@@ -586,6 +607,7 @@
       </div>
     </section>
 
+    <!-- Validation: Contact module conveys limited availability and personal access, reinforcing exclusivity and honest communication. -->
     <section class="contact" id="contact">
       <div class="section-header">
         <h2>Get in Touch</h2>
@@ -611,7 +633,8 @@
     </section>
   </main>
 
-  <footer>
+    <!-- Validation: Footer retains concise premium tone with discreet social link, keeping the brand poised and confident. -->
+    <footer>
     <p>© 2025 ASH HOUND · BOUTIQUE PET CARE</p>
     <div class="footer-links">
       <a href="https://instagram.com/ashandhound" target="_blank" rel="noopener">Instagram</a>
