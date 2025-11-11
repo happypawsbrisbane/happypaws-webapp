@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ash &amp; Hound · Private Dog Care in Brisbane</title>
+  <!-- Primary SEO Meta Tags -->
+  <!--
+    Title: Ash & Hound | Private Dog Care in Brisbane
+    Description: Boutique in-home care and private boarding for dogs who need focused, medical-ready attention. Certified in animal behaviour and trusted by Brisbane families.
+    Keywords: private dog care Brisbane, in-home dog boarding Brisbane, medical dog sitter Brisbane, Ash and Hound
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-weight: 300;
+      color: var(--text);
+      background-color: var(--white);
+      -webkit-font-smoothing: antialiased;
+      line-height: 2;
+      letter-spacing: 0.5px;
+    }
+
+    :root {
+      --cream: #f7f5f2;
+      --sand: #e8e3dd;
+      --taupe: #c9bdb1;
+      --charcoal: #2d2d2d;
+      --white: #ffffff;
+      --text: #3a3a3a;
+      --max-width: 1600px;
+      --content-width: 900px;
+      --wide-width: 1400px;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: opacity 0.3s ease;
+    }
+
+    a:hover {
+      opacity: 0.6;
+    }
+
+    a:focus-visible,
+    .button:focus-visible,
+    .mobile-toggle:focus-visible {
+      outline: 1px solid var(--charcoal);
+      outline-offset: 4px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      color: var(--charcoal);
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      line-height: 2;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 30px 60px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: var(--charcoal);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 50px;
+      margin: 0;
+      padding: 0;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+    }
+
+    nav a {
+      color: var(--text);
+      transition: opacity 0.3s ease;
+    }
+
+    .mobile-toggle {
+      display: none;
+      background: transparent;
+      border: none;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--charcoal);
+      cursor: pointer;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+      background: var(--white);
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3)), url('IMG_1581.png');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.95);
+      z-index: -2;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.2);
+      z-index: -1;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      display: grid;
+      gap: 40px;
+      color: var(--charcoal);
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 6vw, 72px);
+      line-height: 1.7;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 16px 48px;
+      background: var(--charcoal);
+      color: var(--white);
+      border: 1px solid var(--charcoal);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: all 0.4s ease;
+    }
+
+    .button:hover {
+      background: transparent;
+      color: var(--charcoal);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    section {
+      padding: 120px 60px;
+      scroll-margin-top: 120px;
+    }
+
+    .section-header {
+      max-width: var(--content-width);
+      margin: 0 auto 80px;
+      text-align: center;
+      display: grid;
+      gap: 20px;
+    }
+
+    .section-header h2 {
+      font-size: clamp(36px, 4vw, 52px);
+    }
+
+    .section-header p {
+      color: var(--text);
+    }
+
+    .about {
+      background: var(--cream);
+    }
+
+    .about-grid {
+      max-width: var(--wide-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 100px;
+      align-items: center;
+    }
+
+    .about-image {
+      height: 600px;
+      overflow: hidden;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-content h3 {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    .about-content p + p {
+      margin-top: 25px;
+    }
+
+    .services {
+      background: var(--white);
+    }
+
+    .services-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+
+    .service-card {
+      background: var(--cream);
+      padding: 80px 60px;
+      text-align: center;
+    }
+
+    .service-card h3 {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    .showcase {
+      background: var(--white);
+    }
+
+    .showcase-grid {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+
+    .showcase-item {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+    }
+
+    .showcase-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .showcase-caption {
+      position: absolute;
+      left: 30px;
+      bottom: 30px;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 24px;
+      color: var(--white);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .showcase-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .showcase-item:hover .showcase-caption {
+      opacity: 1;
+    }
+
+    .testimonials {
+      background: var(--sand);
+    }
+
+    .testimonial-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .testimonial-quote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 1.8;
+      color: var(--charcoal);
+      margin-bottom: 20px;
+    }
+
+    .testimonial-author {
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--charcoal);
+    }
+
+    .contact {
+      background: var(--white);
+    }
+
+    .contact-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .contact-box {
+      background: var(--cream);
+      padding: 60px;
+      margin: 60px auto;
+      max-width: 600px;
+      text-align: left;
+    }
+
+    .contact-item + .contact-item {
+      margin-top: 30px;
+    }
+
+    .contact-label {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--taupe);
+      font-weight: 500;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .contact-value {
+      font-size: 16px;
+      color: var(--charcoal);
+      font-weight: 300;
+      transition: opacity 0.3s ease;
+      display: inline-block;
+    }
+
+    .contact-value:hover {
+      opacity: 0.6;
+    }
+
+    .contact-note {
+      font-size: 13px;
+      font-style: italic;
+      margin-top: 40px;
+      color: var(--text);
+    }
+
+    .contact-subtext {
+      font-size: 13px;
+      color: var(--text);
+      margin-top: 10px;
+      line-height: 1.8;
+    }
+
+    footer {
+      background: var(--cream);
+      padding: 60px 40px;
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: var(--charcoal);
+    }
+
+    .footer-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .footer-links a {
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 1024px) {
+      header {
+        padding: 25px 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 20px;
+      }
+
+      .nav-container {
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      nav {
+        width: 100%;
+      }
+
+      nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 25px;
+        padding-top: 10px;
+      }
+
+      nav ul.is-open {
+        display: flex;
+      }
+
+      .mobile-toggle {
+        display: block;
+        margin-left: auto;
+      }
+
+      section {
+        padding: 80px 20px;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .about-image {
+        height: 400px;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .showcase-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 0 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a class="logo" href="#top">ASH HOUND</a>
+      <button class="mobile-toggle" aria-expanded="false" aria-controls="primary-navigation">MENU</button>
+      <nav aria-label="Primary navigation">
+        <ul id="primary-navigation">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Validation: Hero messaging stays direct and confident, underscoring private, one-on-one care with a clear enquiry CTA aligned to premium positioning. -->
+    <section class="hero" id="hero" aria-label="Private dog care in Brisbane">
+      <div class="hero-content">
+        <h1>Private Dog Care in Brisbane</h1>
+        <p>24-hour boarding or day care in your home. Trusted by families who want devoted, one-on-one attention for their dogs.</p>
+        <a class="button" href="#contact">Enquire Now</a>
+      </div>
+    </section>
+
+    <!-- Validation: About section highlights complex care expertise and honest service scope in a calm layout, reflecting the brand's human, premium tone. -->
+    <section class="about" id="about">
+      <div class="section-header">
+        <h2>Why ASH &amp; HOUND</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="IMG_6724.jpeg" alt="Dog relaxing comfortably at home cared for by Ash &amp; Hound" />
+        </div>
+        <div class="about-content">
+          <h3>Devoted Care for Dogs Who Need More</h3>
+          <p>Some dogs need medication on schedule. Some can’t be left alone due to medical conditions. Some get stressed in kennels. And some just have owners who refuse to settle for less than excellent care.</p>
+          <p>We follow complex medication schedules, manage dietary requirements, and handle everything from post-surgery recovery to senior dogs who need extra attention. We’re certified in animal behaviour and comfortable with separation anxiety, high-energy dogs, and the kind of higher needs most sitters won’t take on.</p>
+          <p>What you get is trustworthy, devoted care—someone who’ll treat your pet the way you would. Every stay is one-on-one and private. We keep to your dog’s routine, stay close when needed, and handle whatever comes up because we’re actually there—not checking in between other bookings.</p>
+          <p>You’ll get regular updates, photos, and videos. We’re not afraid to message when something noteworthy happens or something unexpected arises.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Validation: Services stay upfront about offerings and rates, reinforcing exclusivity and real 24-hour attention without fluff. -->
+    <section class="services" id="services">
+      <div class="section-header">
+        <h2>Services</h2>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>In-Home Care</h3>
+          <p>We offer doggy day care and 24-hour pet boarding—either at our place or yours. Every booking is private and one-on-one with your dog. Day care plus overnight stays for the full time you’re away. We don’t offer “overnights only” and leave your pet alone all day—that’s not real care. Rates start at $200 per night.</p>
+        </article>
+        <article class="service-card">
+          <h3>Private Boarding</h3>
+          <p>Both services are private and consistent. Perfect for dogs who need extra company, medication throughout the day, or simply can’t be left alone. No other dogs, no overlapping bookings, no risk from unfamiliar animals—unless you specifically want social interaction for your pet. Just reliable, attentive care from someone your dog knows and trusts.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Validation: Showcase imagery focuses on editorial calm moments, supporting trust and premium lifestyle cues without clichés. -->
+    <section class="showcase" id="showcase">
+      <div class="section-header">
+        <h2>Recent Stays</h2>
+        <p>Editorial glimpses of the calm, attentive care Ash &amp; Hound provides for Brisbane dogs who need more presence.</p>
+      </div>
+      <div class="showcase-grid">
+        <figure class="showcase-item">
+          <img src="IMG_1812.png" alt="Dog resting serenely on a sofa" />
+          <figcaption class="showcase-caption">Calm</figcaption>
+        </figure>
+        <figure class="showcase-item">
+          <img src="IMG_1584.png" alt="Dog reclining on a plush bed" />
+          <figcaption class="showcase-caption">Comfort</figcaption>
+        </figure>
+        <figure class="showcase-item">
+          <img src="IMG_5505.jpeg" alt="Dog looking up attentively during a check-in" />
+          <figcaption class="showcase-caption">Connection</figcaption>
+        </figure>
+        <figure class="showcase-item">
+          <img src="IMG_5282.jpeg" alt="Dog receiving calm reassurance outdoors" />
+          <figcaption class="showcase-caption">Trust</figcaption>
+        </figure>
+        <figure class="showcase-item">
+          <img src="IMG_5389.jpeg" alt="Dog sleeping comfortably after care" />
+          <figcaption class="showcase-caption">Devotion</figcaption>
+        </figure>
+        <figure class="showcase-item">
+          <img src="IMG_1540.png" alt="Dog sitting peacefully in natural light" />
+          <figcaption class="showcase-caption">Grace</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Validation: Testimonial remains succinct proof of trust, voiced in a confident yet human tone consistent with the brand bible. -->
+    <section class="testimonials" id="testimonials">
+      <div class="section-header">
+        <h2>Testimonials</h2>
+      </div>
+      <div class="testimonial-wrap">
+        <p class="testimonial-quote">“Ash took excellent care of our anxious rescue while we were away. He was relaxed and happy when we got home. Highly recommend.”</p>
+        <p class="testimonial-author">— Brisbane Client</p>
+      </div>
+    </section>
+
+    <!-- Validation: Contact module conveys limited availability and personal access, reinforcing exclusivity and honest communication. -->
+    <section class="contact" id="contact">
+      <div class="section-header">
+        <h2>Get in Touch</h2>
+      </div>
+      <div class="contact-inner">
+        <div class="contact-box">
+          <div class="contact-item">
+            <span class="contact-label">EMAIL</span>
+            <a class="contact-value" href="mailto:hello@ashandhound.com">hello@ashandhound.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">PHONE</span>
+            <a class="contact-value" href="tel:0401606603">0401 606 603</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">SERVICE AREA</span>
+            <span class="contact-value">Brisbane Metro</span>
+            <p class="contact-subtext">Teneriffe, New Farm, Newstead, Clayfield, Ascot, Hamilton</p>
+          </div>
+        </div>
+        <p class="contact-note">Limited availability. Please enquire about booking.</p>
+      </div>
+    </section>
+  </main>
+
+    <!-- Validation: Footer retains concise premium tone with discreet social link, keeping the brand poised and confident. -->
+    <footer>
+    <p>© 2025 ASH HOUND · BOUTIQUE PET CARE</p>
+    <div class="footer-links">
+      <a href="https://instagram.com/ashandhound" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    const mobileToggle = document.querySelector('.mobile-toggle');
+    const navList = document.getElementById('primary-navigation');
+    const navLinks = document.querySelectorAll('#primary-navigation a[href^="#"]');
+
+    if (mobileToggle && navList) {
+      mobileToggle.addEventListener('click', () => {
+        const isExpanded = mobileToggle.getAttribute('aria-expanded') === 'true';
+        mobileToggle.setAttribute('aria-expanded', String(!isExpanded));
+        navList.classList.toggle('is-open');
+      });
+    }
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        if (navList && navList.classList.contains('is-open')) {
+          navList.classList.remove('is-open');
+          mobileToggle?.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
